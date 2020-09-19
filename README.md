@@ -1,6 +1,6 @@
 # *TreesForUs App*
 
-![](images/TreesForUs-small.png)
+![](images/TreesForUs-banner.png)
 
 **TreesForUs** is a web app built using AngularJS and a Plant API that suggests trees for the user to plant based on location and climate. This app was built during HackMIT 2020!
 
