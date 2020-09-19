@@ -1,4 +1,4 @@
-# *TreesForUs App*
+# TreesForUs App
 
 ![](images/TreesForUs-banner.png)
 
