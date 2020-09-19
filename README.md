@@ -12,3 +12,14 @@
 
 **Group Members:** Christian Aguilar, Itohan Ero, Sarah Mauricio
 
+## How Does It Work?
+
+TreesForUs works by:
+
+* [x] Enter Location and Climate
+* [x] Tree is Chosen based on Enviornment
+* [x] Instructions on How to Plant the Tree will be Given to User
+
+
+## Video Walkthrough
+
