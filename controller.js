@@ -6,6 +6,8 @@ angular.module('ngRepeat', ['ngAnimate']).controller('repeatController', functio
     {name:'Mary', age:40},
     {name:'Peter', age:85}
   ];
+  
+  $scope.county = "Los Angeles";data
 
   $scope.removeFirst = function() {
     $scope.friends.shift();
@@ -13,6 +15,8 @@ angular.module('ngRepeat', ['ngAnimate']).controller('repeatController', functio
   
   $scope.getTrees = function() {
     alert("THIS IS A TEST FUNCTION"); 
+    $http.post('http://api.treesfor.us/post', {county: $scope.county}, config).then(successCallback, errorCallback);
+
   }
 
   $scope.updateAge = function() {
