@@ -45,7 +45,7 @@
 
     <div class="form-group">
       <label for="exampleInputCount">Enter your county: </label>
-      <input type="county" class="form-control" id="exampleInputCount" name="county" aria-describedby="emailHelp" placeholder="San Diego">
+      <input type="county" ng-model="county" class="form-control" id="exampleInputCount" name="county" aria-describedby="emailHelp" placeholder="San Diego">
       <br/><br/>
       <button id = "submitButton" ng-click="getTrees()">Submit</button>
     </div>
