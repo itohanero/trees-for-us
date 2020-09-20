@@ -1,0 +1,28 @@
+.form-group{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+ 
+}
+
+.form-group{
+    margin: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+.banner{
+    margin-bottom: 4vw;
+    width: 100%;
+}
+
+.form{
+    background-color: lightgray;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#submitButton{
+    background-color: white;
+    color: white;
+}
