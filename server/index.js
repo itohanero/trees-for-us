@@ -1,5 +1,6 @@
 const express = require('express')
 var request = require('request');
+path = require("path");
 const app = express()
 const port = 80
 
@@ -63,9 +64,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 // in latest body-parser use like below.
 app.use(bodyParser.urlencoded({ extended: true }));
-app.get('/', (req, res) => {
-  res.send('<b>Hello World!</b>')
-})
 
 
 
@@ -79,6 +77,11 @@ app.post('/post',(req,res) => {
 	}		);
 	
 })
+
+
+app.use('/', express.static(path.join(__dirname, 'public')))
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
