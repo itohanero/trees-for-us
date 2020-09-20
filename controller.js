@@ -20,7 +20,9 @@ angular.module('ngRepeat', ['ngAnimate']).controller('repeatController', functio
                                            console.log(response);
                                                                        },
               (response)=> {
-                alert("We failed! "+response);}
+                alert("We failed! "+response);
+                console.log(response);  
+              }
                
 
      );
