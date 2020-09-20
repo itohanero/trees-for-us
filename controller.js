@@ -8,6 +8,8 @@ angular.module('ngRepeat', ['ngAnimate']).controller('repeatController', functio
   ];
   
   $scope.county = "Los Angeles";
+  
+  $scope.treelist = [];
 
   $scope.removeFirst = function() {
     $scope.friends.shift();
@@ -17,6 +19,7 @@ angular.module('ngRepeat', ['ngAnimate']).controller('repeatController', functio
     alert("THIS IS A TEST FUNCTION"); 
     $http.post('https://api.treesfor.us/post', {county: $scope.county}, {headers: {'Content-Type': 'application/json'}})
          .then((response)=>{
+		 $scope.treelist=response.data;
                                            console.log(response);
                                                                        },
               (response)=> {

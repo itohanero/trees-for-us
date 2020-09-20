@@ -25,10 +25,15 @@
       <button  class="btn btn-primary" id = "submitButton" ng-click="getTrees()">Submit</button>
     </div>
   </div>
-  <div class = "row">
-    <div ng-repeat="tree in treelist">
-	    <p>{{tree.accepted_plant.scientific_name}}{{tree.accepted_plant.common_name}}</p>
-    </div>
+  <div class = "row"> 
+    <div ng-repeat="tree in treelist" class="col-md-4">
+	    <div class="card"> 
+		    <div class="card-body">
+			    <h5 class="card-title"> {{tree.accepted_plant.scientific_name}}</h5>
+			    <p class="card-text"> {{tree.accepted_plant.common_name}}</p>
+		    </div>
+	    </div>
+  </div>
   </div>
     
            </div>

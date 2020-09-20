@@ -37,6 +37,7 @@ fs.writeFile("./search.json", JSON.stringify(response.body), function(err) {
     }
     console.log("The file was saved!");
 }); 
+		if(!data.basic_plant_list) return resolve(0);
 //	console.log(response.body);
   for (let tree_index in data.basic_plant_list.plant_list) {
 	  let current_plant = data.basic_plant_list.plant_list[tree_index];
