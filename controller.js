@@ -1,6 +1,6 @@
 (function(angular) {
   'use strict';
-angular.module('ngRepeat', ['ngAnimate']).controller('repeatController', function($scope) {
+angular.module('ngRepeat', ['ngAnimate']).controller('repeatController', function($scope,$http)) {
   var friends = [
     {name:'John', age:25},
     {name:'Mary', age:40},
