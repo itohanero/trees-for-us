@@ -23,3 +23,4 @@ TreesForUs works by:
 
 ## Video Walkthrough
 
+<img src='images/treesForUs.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
