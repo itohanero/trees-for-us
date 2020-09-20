@@ -15,7 +15,7 @@ angular.module('ngRepeat', ['ngAnimate']).controller('repeatController', functio
   
   $scope.getTrees = function() {
     alert("THIS IS A TEST FUNCTION"); 
-    $http.post('http://api.treesfor.us/post', {county: $scope.county}, {headers: {'Content-Type': 'application/json'})
+    $http.post('http://api.treesfor.us/post', {county: $scope.county}, {headers: {'Content-Type': 'application/json'}})
          then((response)=>{
                                            console.log(response);
                                                                        });
