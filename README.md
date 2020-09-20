@@ -8,7 +8,9 @@
 <img align="left" width="100" height="100" src="https://i.pinimg.com/originals/ab/89/1f/ab891f2df4d35343a33d1f441a129254.jpg">
 
 
-**TreesForUs** is a web app built using AngularJS and a Plant API that suggests trees for the user to plant based on location and climate. This app was built during HackMIT 2020 with a group of sophomore computer science majors from UCLA!
+Want to plant a tree? Don't know which tree is best for your location and climate? **TreesForUs** is a web app that suggests trees for the user to plant based on location and climate. It uses information from the govenrment's [plant database](https://plants.sc.egov.usda.gov/java/). With the adverse effects of climate change and air pollution planting trees will produce oxygen, intercept airborne particulates, and reduce smog. This will enhance a community's respiratory health. So plant some trees! Come check out our app demo down below!
+
+This app was built during HackMIT 2020 with a group of sophomore computer science majors from UCLA! 
 
 **Group Members:** Christian Aguilar, Itohan Ero, Sarah Mauricio
 
@@ -24,3 +26,6 @@ TreesForUs works by:
 ## Video Walkthrough
 
 <img src='images/treesForUs.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
+
