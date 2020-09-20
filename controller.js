@@ -10,6 +10,10 @@ angular.module('ngRepeat', ['ngAnimate']).controller('repeatController', functio
   $scope.removeFirst = function() {
     $scope.friends.shift();
   };
+  
+  $scope.getTrees = function() {
+    alert("THIS IS A TEST FUNCTION"); 
+  }
 
   $scope.updateAge = function() {
     $scope.friends.forEach(function(el) {
