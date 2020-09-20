@@ -16,15 +16,20 @@
     <!--script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script-->
   <img class = "banner" src = "./images/TreesForUs-banner.png" alt = "banner">
 
+
+  <div class= "row justify-content-md-center"> 
     <div class="form-group">
       <label for="exampleInputCount">Enter your county: </label>
       <input type="county" ng-model="county" class="form-control" id="exampleInputCount" name="county" aria-describedby="emailHelp" placeholder="San Diego">
       <br/><br/>
-      <button id = "submitButton" ng-click="getTrees()">Submit</button>
+      <button  class="btn btn-primary" id = "submitButton" ng-click="getTrees()">Submit</button>
     </div>
+  </div>
+  <div class = "row">
     <div ng-repeat="tree in treelist">
-	    <p>{{tree}}</p>
+	    <p>{{tree.accepted_plant.scientific_name}}{{tree.accepted_plant.common_name}}</p>
     </div>
+  </div>
     
            </div>
 
