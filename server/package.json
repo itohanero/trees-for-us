@@ -1,0 +1,22 @@
+{
+  "name": "treesforus",
+  "version": "1.0.0",
+  "description": "Trees!",
+  "main": "index.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itohanero/trees-for-us.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itohanero/trees-for-us/issues"
+  },
+  "homepage": "https://github.com/itohanero/trees-for-us#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
