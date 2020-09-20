@@ -7,7 +7,7 @@ angular.module('ngRepeat', ['ngAnimate']).controller('repeatController', functio
     {name:'Peter', age:85}
   ];
   
-  $scope.county = "Los Angeles";data
+  $scope.county = "Los Angeles";
 
   $scope.removeFirst = function() {
     $scope.friends.shift();
