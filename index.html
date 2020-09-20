@@ -2,12 +2,45 @@
 <head>
    <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
   <script src="//code.angularjs.org/snapshot/angular-animate.js"></script>
-  <script src="script.js"></script>
+  <script src="controller.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
   <link rel="stylesheet" href="./main.css">
 </head>
 
 <html>
+   <body ng-app="ngRepeat">
+  <div ng-controller="repeatController">
+     
+  <button ng-click="removeFirst()">Remove First</button>
+  <button ng-click="updateAge()">Update Age</button>
+  <button ng-click="copy()">Copy</button>
+  <br><button ng-click="reset()">Reset List</button>
+  <br>
+  <code>track by $id(friend)</code> (default):
+  <ul class="example-animate-container">
+    <li class="animate-repeat" ng-repeat="friend in friends">
+      {{friend.name}} is {{friend.age}} years old.
+    </li>
+  </ul>
+  <code>track by $id(friend)</code> (default), with age one-time binding:
+  <ul class="example-animate-container">
+    <li class="animate-repeat" ng-repeat="friend in friends">
+      {{friend.name}} is {{::friend.age}} years old.
+    </li>
+  </ul>
+  <code>track by friend.name</code>, with age one-time binding:
+  <ul class="example-animate-container">
+    <li class="animate-repeat" ng-repeat="friend in friends track by friend.name">
+      {{friend.name}}  is {{::friend.age}} years old.
+    </li>
+  </ul>
+  <code>track by $index</code>, with age one-time binding:
+  <ul class="example-animate-container">
+    <li class="animate-repeat" ng-repeat="friend in friends track by $index">
+      {{friend.name}} is {{::friend.age}} years old.
+    </li>
+  </ul>
+      </div>
   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
   <img class = "banner" src = "./images/TreesForUs-banner.png" alt = "banner">
 
@@ -20,5 +53,7 @@
     </div>
     
 </form>
+     
+   </body>
   
 </html>
